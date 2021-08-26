@@ -7,6 +7,7 @@ declare module 'styled-components' {
       primary: string;
       background: string;
       text: string;
+      border: string;
       title: string;
       white: string;
       iconFloating: string;

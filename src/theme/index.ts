@@ -7,6 +7,7 @@ export const theme: DefaultTheme = {
     primary: '#1D1B7F',
     title: '#36403B',
     text: '#CAC9F9',
+    border: '##36403B',
     white: '#FFF',
     iconFloating: '#CFCBD2',
     fontFloating: '#3F4043',

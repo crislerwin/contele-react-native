@@ -25,5 +25,6 @@ export const Footer = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 80px;
-  background-color: ${({theme}) => theme.color.background};
+  background-color: ${({theme}) => theme.color.white};
+ 
 `;
