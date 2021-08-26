@@ -1,16 +1,32 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack'
-import {Home} from '../pages/Home'
-import {Status} from '../pages/Status'
-const Stack = createStackNavigator();
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Home} from '../pages/Home';
+import Status from '../pages/Status';
+import {NavigationContainer} from '@react-navigation/native';
 
+const Stack = createNativeStackNavigator();
 
-export const Routes:  React.FC<{}> = () => {
+const Routes: React.FC = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Details" component={Status} />
-    </Stack.Navigator>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: 'Home',
+          }}
+        />
+        <Stack.Screen
+          name="Status"
+          component={Status}
+          options={{
+            title: 'Status',
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
+export default Routes;
