@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {View, Button} from 'react-native';
+import {View, Text} from 'react-native';
 
-const Status: React.FC<{}> = ({navigation}) => {
+const Status: React.FC<{}> = () => {
   return (
     <View>
-      <Button title="Voltar" onPress={() => navigation.navigate('Home')} />
+   
     </View>
   );
 };

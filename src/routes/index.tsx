@@ -4,7 +4,10 @@ import {Home} from '../pages/Home';
 import Status from '../pages/Status';
 import {NavigationContainer} from '@react-navigation/native';
 
+
 const Stack = createNativeStackNavigator();
+
+
 
 const Routes: React.FC = () => {
   return (
@@ -13,16 +16,20 @@ const Routes: React.FC = () => {
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{
-            title: 'Home',
-          }}
+          options={
+            {
+              headerShown: false,
+          }
+          }
         />
         <Stack.Screen
           name="Status"
-          component={Status}
-          options={{
-            title: 'Status',
-          }}
+          component={Status} 
+          options={
+            {
+              title: 'Voltar'
+            }
+          }
         />
       </Stack.Navigator>
     </NavigationContainer>

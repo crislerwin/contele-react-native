@@ -7,7 +7,7 @@ import Routes from './routes';
 export const App: React.FC<{}> = () => {
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar barStyle="default" backgroundColor="#5a11eb" />
+      <StatusBar barStyle="default" backgroundColor="#4308ba" />
       <Routes />
     </ThemeProvider>
   );
