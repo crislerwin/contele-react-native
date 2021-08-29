@@ -9,8 +9,13 @@
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "body": "Crisler Wintler",
+      "postId": 2
+    },
+    {
+      "id": 2,
+      "body": "Something",
+      "postId": 3
     }
   ],
   "profile": {

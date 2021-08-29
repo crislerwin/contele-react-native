@@ -10,14 +10,15 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: ${({theme}) => theme.color.primary};
+  background-color: ${({theme}) => theme.color.white};
 `;
 
 export const Text = styled.Text`
-  color: ${({theme}) => theme.color.text};
+  color: ${({theme}) => theme.color.primary};
   font-size: 16px;
   font-weight: normal;
 font-family: Roboto;
+
   `;
 
 export const Footer = styled.View`

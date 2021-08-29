@@ -1,13 +1,14 @@
-import useSWR from "swr";
-import api from "../services/api";
+import useSWR from 'swr';
+import api from '../services/api';
+export function useFetch<Data = any, Error = any>(url: string) {
+  const { data, error } = useSWR<Data, Error>(
+    url,
+    async (url) => {
+      const response = await api.get(url);
 
-export function useFetch<T = any, Error = any> (url: string) {
-  const {data, error, mutate } = useSWR<T, Error>(url, async (url) => {
-    const response = await api.get(url);
-
-    return response.data;
-  });
-
-  return { data, error, mutate };
-
+      return response.data;
+    },
+    {},
+  );
+  return { data, error };
 }

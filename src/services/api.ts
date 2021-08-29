@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8002',
+  baseURL: 'https://covid19.mathdro.id/api',
 });
 
 export default api;
