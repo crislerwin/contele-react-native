@@ -18,6 +18,8 @@ target 'cntl' do
 
   pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'cntlTests' do
     inherit! :complete
     # Pods for testing
