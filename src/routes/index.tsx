@@ -21,7 +21,7 @@ const Routes: React.FC = () => {
           name="Status"
           component={Status}
           options={{
-            title: 'Voltar',
+            headerShown: true
           }}
         />
       </Stack.Navigator>

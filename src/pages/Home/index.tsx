@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { Container, Text, Header } from './styles'
-import { useNavigation } from '@react-navigation/native'
+
 import {useFetch} from '../../hooks/useFetch'
+import {Button} from '../../components/button'
 export const Home = () => {
-  const { navigate }: any = useNavigation()
+  
  const {data} = useFetch("/confirmed")
  if (!data) {
    return <Text>Loading...</Text>
@@ -15,7 +16,7 @@ export const Home = () => {
       <Header>
         <Text> Seja bem vindo!</Text>
 
-        <Text onPress={() => navigate("Status")}>Status</Text>
+        <Button route="Status">Status</Button>
       </Header>
     
         <Text>{data[0].countryRegion}</Text>
