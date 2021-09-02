@@ -7,7 +7,7 @@ export const Home = () => {
  
   return (
     <Container>
-   <Head title="Olá, bem-vindo 🖐"/>
+   <Head title="Olá, bem-vindo " name="Crisler"/>
    <Tracking title="My GPS - Tracking" status="Online" image={icon} />
     </Container>
   )

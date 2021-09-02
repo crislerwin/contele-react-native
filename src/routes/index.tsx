@@ -16,7 +16,7 @@ const routeTitle = ({ route }: any) => {
 const Routes: React.FC = () => {
   return (
     <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="#000062" />
+      <StatusBar barStyle="light-content" backgroundColor="#1282FF" />
 
       <Tab.Navigator
         screenOptions={({ route }) => ({

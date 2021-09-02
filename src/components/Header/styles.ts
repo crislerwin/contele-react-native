@@ -5,10 +5,14 @@ const HeaderContainer = styled.View``;
 const Header = styled.View`
   flex-direction: row;
   justify-content: center;
-  padding: 30px;
-  background-color: ${({theme}) => theme.color.primary};`
+  padding: 20px;
+  background-color: ${({theme}) => theme.color.secondary};`
   ;
-
+const Name = styled.Text`
+  font-size: 20px;
+  color: ${({theme}) => theme.color.green};
+  font-weight: bold;  
+`;
 
 const HeaderText = styled.Text`
 color: ${({theme}) => theme.color.text};
@@ -16,4 +20,4 @@ color: ${({theme}) => theme.color.text};
   font-weight: normal;`;
 
 
-export { HeaderContainer, Header, HeaderText };
+export { HeaderContainer, Header, HeaderText, Name };
