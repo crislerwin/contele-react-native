@@ -4,7 +4,7 @@ export const theme: DefaultTheme = {
   title: 'light',
   color: {
     background: '#F9F7FE',
-    primary: '#1D1B7F',
+    primary: '#1D157D',
     title: '#36403B',
     text: '#CAC9F9',
     border: '##36403B',

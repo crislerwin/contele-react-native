@@ -1,24 +1,9 @@
 import * as React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import { useFetch } from '../../hooks/useFetch'
+import { Head } from '../../components/Header'
+import { Container } from './styles'
 
-const Status: React.FC<{}> = () => {
-  const {data} = useFetch('/confirmed')
-  if (!data) {
-    return <Text>Loading...</Text>
-  }
-
-
-  return (
- <Text>{data[0].deaths}</Text>
-  )
+export const Status: React.FC<{}> = () => {
+  return <Container>
+    <Head title="Status" />
+  </Container>
 }
-export default Status
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  }
-})

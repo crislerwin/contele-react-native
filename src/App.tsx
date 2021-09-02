@@ -7,11 +7,14 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export const App: React.FC<{}> = () => {
   return (
-    <SafeAreaProvider>
     <ThemeProvider theme={theme}>
-      <StatusBar barStyle="default" backgroundColor="#4308ba" />
+       <StatusBar barStyle="default" backgroundColor="#4308ba" />
+    <SafeAreaProvider>
+    
+     
       <Routes />
-    </ThemeProvider>
+   
     </SafeAreaProvider>
+    </ThemeProvider>
   );
 };
