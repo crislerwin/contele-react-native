@@ -7,11 +7,14 @@ const Header = styled.View`
   justify-content: center;
   padding: 20px;
   background-color: ${({theme}) => theme.color.secondary};`
+
   ;
 const Name = styled.Text`
   font-size: 20px;
-  color: ${({theme}) => theme.color.green};
-  font-weight: bold;  
+  color: ${({theme}) => theme.color.text};
+  font-weight: bold;
+  font-style: italic; 
+ 
 `;
 
 const HeaderText = styled.Text`

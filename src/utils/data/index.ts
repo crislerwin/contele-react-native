@@ -20,3 +20,26 @@ export const data = {
   }
   ]
   }
+
+  export const time = [
+    {
+      id: Math.random(),
+      title: '10s',
+    },
+    {
+      id: Math.random(),
+      title: '5s',
+    },
+    {
+      id: Math.random(),
+      title: '3s',
+    },
+    {
+      id: Math.random(),
+      title: '1s',
+    },
+    {
+      id: Math.random(),
+      title: '1s',
+    },
+  ]

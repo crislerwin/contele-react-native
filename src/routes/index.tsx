@@ -1,6 +1,6 @@
 import React from 'react'
-import { Home } from '../pages/Home'
-import { Status } from '../pages/Status'
+import { Home } from '../screens/Home'
+import { Status } from '../screens/Status'
 import Feather from 'react-native-vector-icons/Feather'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'

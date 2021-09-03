@@ -3,14 +3,14 @@ import {HeaderContainer, Header, HeaderText,Name} from './styles'
 
 type TitleProps = {
   title: string;
-  name: string;
+ 
 }
 
-export const Head: React.FC<TitleProps> = ({title, name}) => {
+export const Head: React.FC<TitleProps> = ({title}) => {
   return (
     <HeaderContainer>
       <Header>
-        <HeaderText>{title}<Name>{name}</Name></HeaderText>
+        <HeaderText>{title}</HeaderText>
       </Header>
     </HeaderContainer>
   );

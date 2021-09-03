@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { Head } from '../../components/Header'
-import { Container } from './styles'
+
+import { Container, Header, Title} from './styles'
 
 export const Status: React.FC<{}> = () => {
   return <Container>
-    <Head title="Status" />
+    <Header><Title>Status</Title></Header>
   </Container>
 }
