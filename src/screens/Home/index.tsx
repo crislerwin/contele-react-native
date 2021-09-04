@@ -4,13 +4,11 @@ import icon from '../../assets/bussola.png'
 import { Head } from '../../components/Header'
 import { Tracking } from '../../components/Tracking'
 import { Menu } from '../../components/Menu'
-import { FlatList } from 'react-native'
+import { FlatList } from 'react-native-gesture-handler'
 import { Item } from '../../components/Item'
 import { time } from '../../utils/data'
 
-export const Home = () => {
-  const renderItem = ({ item }: any) => <Item title={item.title} />
-
+export const Home: React.FC<{}> = () => {
   return (
     <Container>
       <Head title="Olá, bem-vindo 👋" />
@@ -20,9 +18,9 @@ export const Home = () => {
         <TimeContainer>
           <TimeTitle>Intervalo de comunicação</TimeTitle>
         </TimeContainer>
-        <FlatList<{ id: number; title: string }>
+        <FlatList
           data={time}
-          renderItem={renderItem}
+          renderItem={({ item }) => <Item title={item.title} />}
           keyExtractor={(item) => item.id}
           numColumns={4}
         />
