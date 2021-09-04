@@ -1,0 +1,88 @@
+{
+  "time": [
+    {
+      "id": 1,
+      "title": "1s"
+    },
+    {
+      "id": 2,
+      "title": "6s"
+    },
+    {
+      "id": 3,
+      "title": "4s"
+    },
+    {
+      "id": 4,
+      "title": "10s"
+    },
+    {
+      "title": "10s",
+      "id": 5
+    },
+    {
+      "title": "3s",
+      "id": 6
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "pkg": "323232",
+      "title": "Pacote ID",
+      "status": "Pendente sincronizar",
+      "time": "11:32"
+    },
+    {
+      "id": 2,
+      "pkg": "323232",
+      "title": "Pacote ID",
+      "status": "Pendente sincronizar",
+      "time": "11:32"
+    },
+    {
+      "id": 3,
+      "pkg": "323232",
+      "title": "Pacote ID",
+      "status": "Pendente sincronizar",
+      "time": "11:32"
+    },
+    {
+      "id": 4,
+      "pkg": "323232",
+      "title": "Pacote ID",
+      "status": "Pendente sincronizar",
+      "time": "11:32"
+    }
+  ],
+  "points": [
+    {
+      "id": 1,
+      "latitude": -23.2213123,
+      "longitude": -45.2313213,
+      "speed": 1,
+      "time": "11:32"
+    },
+    {
+      "id": 2,
+      "latitude": -23.2213123,
+      "longitude": -45.2313213,
+      "speed": 10,
+      "time": "10:32"
+    },
+    {
+      "id": 3,
+      "latitude": -23.2213123,
+      "longitude": -45.2313213,
+      "speed": 3,
+      "time": "9:32"
+    },
+    {
+      "id": 4,
+      "latitude": -23.2213123,
+      "longitude": -45.2313213,
+      "speed": 4,
+      "time": "8:32"
+    }
+  ]
+}
