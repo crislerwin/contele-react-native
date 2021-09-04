@@ -16,6 +16,7 @@ const Routes: React.FC = () => {
             let iconName: any
 
             if (route.name === 'Home') {
+              // if you want to change the icon, you can do it here
               iconName = focused ? 'home' : 'home'
             } else if (route.name === 'Status') {
               iconName = focused ? 'list' : 'list'
