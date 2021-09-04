@@ -1,7 +1,8 @@
 import styled from 'styled-components/native'
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   flex: 1;
+  background-color: ${({ theme }) => theme.color.background};
 `
 
 const Header = styled.View`
@@ -16,4 +17,8 @@ const Title = styled.Text`
   font-size: 20px;
   font-weight: normal;
 `
-export { Container, Header, Title }
+const ListContainer = styled.View`
+background-color: ${({ theme }) => theme.color.background};
+`
+
+export { Container, Header, Title, ListContainer }

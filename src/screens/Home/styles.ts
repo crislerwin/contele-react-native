@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 
 const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.background};
 `
 
 const FlatContainer = styled.SafeAreaView`

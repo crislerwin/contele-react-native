@@ -3,10 +3,11 @@ import styled from 'styled-components/native'
 const Container = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid #e6e6f0;
 `
 
 const TextContainer = styled.View`
-  margin: 20px 20px;
+  margin: 20px ;
 `
 
 const Title = styled.Text`
@@ -15,7 +16,7 @@ const Title = styled.Text`
 
 const Status = styled.Text`
   font-size: 16px;
-  margin: 4px;
+  margin-top: 4px;
   color: ${({ theme }) => theme.color.primary};
 `
 

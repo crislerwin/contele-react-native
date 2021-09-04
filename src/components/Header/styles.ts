@@ -9,13 +9,7 @@ const Header = styled.View`
   background-color: ${({theme}) => theme.color.secondary};`
 
   ;
-const Name = styled.Text`
-  font-size: 20px;
-  color: ${({theme}) => theme.color.text};
-  font-weight: bold;
-  font-style: italic; 
- 
-`;
+
 
 const HeaderText = styled.Text`
 color: ${({theme}) => theme.color.text};
@@ -23,4 +17,4 @@ color: ${({theme}) => theme.color.text};
   font-weight: normal;`;
 
 
-export { HeaderContainer, Header, HeaderText, Name };
+export { HeaderContainer, Header, HeaderText};

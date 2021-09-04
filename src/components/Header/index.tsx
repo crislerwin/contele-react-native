@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderContainer, Header, HeaderText,Name} from './styles'
+import {HeaderContainer, Header, HeaderText} from './styles'
 
 type TitleProps = {
   title: string;

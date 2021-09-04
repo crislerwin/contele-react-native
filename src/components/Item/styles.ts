@@ -5,8 +5,10 @@ const ItemContainer = styled.View`
   background-color: #F5f5f5;
   width: 80px;
   padding: 20px;
-  margin: 8px;
+  margin: 6px;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  
  
 `;
 

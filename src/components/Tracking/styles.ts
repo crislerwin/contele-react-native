@@ -2,6 +2,7 @@ import styled from 'styled-components/native'
 
 const Container = styled.View`
   flex-direction: row;
+  
 `
 
 const IconContainer = styled.View`
@@ -25,7 +26,7 @@ const TrackTitle = styled.Text`
 `
 
 const TrackStatus = styled.Text`
-  margin: 4px;
+  margin-top: 4px;
   font-size: 16px;
   font-weight: 400;
   color: ${({ theme }) => theme.color.green};

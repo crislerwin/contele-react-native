@@ -4,20 +4,12 @@ import { Status } from '../screens/Status'
 import Feather from 'react-native-vector-icons/Feather'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { StatusBar } from 'react-native'
+
 const Tab = createBottomTabNavigator()
-const routeTitle = ({ route }: any) => {
-  if (route.name === 'Home') {
-    return 'Home'
-  } else if (route.name === 'Status') {
-    return 'Status'
-  }
-}
+
 const Routes: React.FC = () => {
   return (
     <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="#1282FF" />
-
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
