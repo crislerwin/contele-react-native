@@ -1,15 +1,15 @@
 import * as React from 'react'
-import { Text } from 'react-native'
 import { FlatList } from 'react-native-gesture-handler'
+import { Loader } from '../../components/Loader'
 import { StatsList } from '../../components/StatsList'
 import { useFetch } from '../../hooks/useFetch'
 import { stats } from '../../utils/data'
 import { Container, Header, Title, ListContainer } from './styles'
 
 export const Status: React.FC<{}> = () => {
-  const {data, error} = useFetch("/confirmed")
-  if (!data) return <Text>Loading...</Text>
-  if (error) return <Text>Service unavailable</Text>
+  const { data } = useFetch('/confirmed')
+  if (!data) return <Loader />
+
   return (
     <Container>
       <Header>
@@ -17,14 +17,14 @@ export const Status: React.FC<{}> = () => {
       </Header>
       <ListContainer>
         <FlatList
-          data={data}
-          keyExtractor={(item) => item.uid}
+          data={stats}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <StatsList
-              time={item.deaths}
-              title={item.countryRegion}
-              status={item.confirmed}
-              pkg={item.iso3}
+              time={item.time}
+              title={item.title}
+              status={item.status}
+              pkg={item.pkg}
             />
           )}
         />
