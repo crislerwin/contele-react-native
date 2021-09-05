@@ -7,14 +7,13 @@ import { Menu } from '../../components/Menu'
 import { FlatList } from 'react-native-gesture-handler'
 import { Item } from '../../components/Item'
 import { time } from '../../utils/data'
-import { useFetch } from '../../hooks/useFetch'
-import { Loader } from '../../components/Loader'
+// import { useFetch } from '../../hooks/useFetch'
+// import { Loader } from '../../components/Loader'
 
- export const Home: React.FC = () => {
-  
-  const {data} = useFetch('/confirmed')
-  if (!data) return <Loader/>
-  
+export const Home: React.FC = () => {
+  // const { data } = useFetch('/confirmed')
+  // if (!data) return <Loader />
+
   return (
     <Container>
       <Head title="Olá, bem-vindo 👋" />
@@ -24,15 +23,14 @@ import { Loader } from '../../components/Loader'
         <TimeContainer>
           <TimeTitle>Intervalo de comunicação</TimeTitle>
         </TimeContainer>
-      
+
         <FlatList
           data={time}
-          renderItem={({ item }) => <Item title={item.title} />}
           keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <Item title={item.title} />}
           numColumns={4}
         />
       </FlatContainer>
-      
     </Container>
   )
 }
