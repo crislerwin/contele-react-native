@@ -7,6 +7,7 @@ import { Menu } from '../../components/Menu'
 import { FlatList } from 'react-native-gesture-handler'
 import { Item } from '../../components/Item'
 import { time } from '../../utils/data'
+import { Loader } from '../../components/Loader'
 // import { useFetch } from '../../hooks/useFetch'
 // import { Loader } from '../../components/Loader'
 
@@ -32,15 +33,15 @@ export const Home: React.FC = () => {
       />
       <FlatContainer>
         <TimeContainer>
-          <TimeTitle>Intervalo de comunicação</TimeTitle>
-        </TimeContainer>
-
-        <FlatList
+          <TimeTitle>{isActive === true ? 'Intervalo de Comunicação' : 'Aguardando...'}</TimeTitle>
+        </TimeContainer>{isActive === false ? <Loader /> : <FlatList
           data={time}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => <Item title={item.title} />}
           numColumns={4}
-        />
+        /> }
+
+     
       </FlatContainer>
     </Container>
   )

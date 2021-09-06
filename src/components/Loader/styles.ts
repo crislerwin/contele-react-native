@@ -4,7 +4,7 @@ const  Container  = styled.View`
 flex: 1;
 width: 80px;
 height: 40px;
-margin: 180px;
+margin: 144px;
 flex-direction: row;
 align-items: center;
 justify-content: center;
