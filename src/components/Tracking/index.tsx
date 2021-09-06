@@ -11,10 +11,11 @@ import {
 type TrackProps = {
   title: string
   status: string
-  image: string
+  image: string,
+  statusColor: string
 }
 
-export const Tracking: React.FC<TrackProps> = ({ title, status, image }) => {
+export const Tracking: React.FC<TrackProps> = ({ title, status, image, statusColor }) => {
   return (
     <Container>
         <IconContainer>
@@ -22,7 +23,7 @@ export const Tracking: React.FC<TrackProps> = ({ title, status, image }) => {
       </IconContainer>
       <TrackContainer>
         <TrackTitle>{title}</TrackTitle>
-        <TrackStatus>{status}</TrackStatus>
+        <TrackStatus color={statusColor}>{status}</TrackStatus>
       </TrackContainer>
     
     </Container>

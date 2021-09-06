@@ -29,7 +29,7 @@ const TrackStatus = styled.Text`
   margin-top: 4px;
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.color.green};
+  color: ${( {color}: {color: string} ) => color };
 `
 
 export {

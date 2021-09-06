@@ -15,7 +15,7 @@ const Ball = styled(Animated.View)`
 width: 14px;
 height: 14px;
 border-radius: 7px;
-background-color: ${({ color }: any) => color || '#777'};
+background-color: ${({ color } : {color: string}) => color || '#777'};
 `;
 
 const Text = styled.Text`

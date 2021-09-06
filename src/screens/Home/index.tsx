@@ -11,14 +11,25 @@ import { time } from '../../utils/data'
 // import { Loader } from '../../components/Loader'
 
 export const Home: React.FC = () => {
+  const [isActive, setIsActive] = React.useState(false)
   // const { data } = useFetch('/confirmed')
   // if (!data) return <Loader />
 
   return (
     <Container>
       <Head title="Olá, bem-vindo 👋" />
-      <Tracking title="My GPS - Tracking" status="Online" image={icon} />
-      <Menu title="Status do Serviço" description="Serviço ativo" />
+      <Tracking
+        statusColor={isActive === true ? 'green' : 'red'}
+        title="My GPS - Tracking"
+        status={isActive === true ? 'Online' : 'Offline'}
+        image={icon}
+      />
+      <Menu
+        active={isActive}
+        onToggle={() => setIsActive(isActive === true ? false : true)}
+        title="Status do Serviço"
+        description={isActive === true ? 'Serviço Ativo' : 'Serviço Inativo'}
+      />
       <FlatContainer>
         <TimeContainer>
           <TimeTitle>Intervalo de comunicação</TimeTitle>
