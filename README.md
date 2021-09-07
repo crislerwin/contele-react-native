@@ -1,5 +1,16 @@
-# This app is a test for the Contele 
+# Contele React Native Test
 
 
-## Telas de Referencia
-![](.github/assets/layout.png)
+## Example
+
+![](.github/assets/example.gif)
+
+## Technologies Used
+- TypeScript
+- React Native
+- Styled Components
+
+## To Do
+[x] Screens for each component
+[ ] Implement Geolocation
+[ ] Conecction to API 
